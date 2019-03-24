@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/png" href="icone.png" />
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Portfolio</title>
+
+    <!-- Bootstrap -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+<style>
+* {
+  box-sizing: border-box;
+  margin: 0;
+  font-family: 'Arial Bold', sans-serif;
+  align-content: center;
+}
+
+.html {
+  margin: 0;
+  font-family: 'Arial Bold', sans-serif;
+  align-content: center;
+}
+
+.div {
+  
+  }
+
+.header {
+  text-align: center;
+  padding: 64px;
+}
+
+.row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  padding: 0 16px;
+
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  -ms-flex: 25%; /* IE10 */
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 16px;
+}
+
+.column img {
+  margin-top: 16px;
+  vertical-align: middle;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+.grayscale:hover {-webkit-filter: grayscale(0%);filter: grayscale(0%); transition: 0.5s;}
+.grayscale {-webkit-filter: grayscale(100%);filter: grayscale(100%);}
+/*.gray img:hover{
+  filter: grayscale(0%);
+  -webkit-filter: grayscale(0%);
+  -webkit-transition: all 3s ease;
+  filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'1 0 0 0 0, 0 1 0 0 0, 0 0 1 0 0, 0 0 0 1 0\'/></filter></svg>#grayscale");
+}*/
+</style>
+
+<body>
+
+<!-- Header -->
+<div class="header">
+  <h1>Portfolio</h1>
+</div>
+
+<!-- Photo Grid -->
+<div class="row"> 
+
+  <div class="column">
+    <div style="width:100%"></div>
+    <div style="width:100%"></div>
+    <div style="width:100%"></div>
+    <div style="width:100%"></div>
+  </div>
+
+  <div class="column">
+
+    <div class = "grayscale" data-aos="fade-up"><img  src="img/backpackportraitPP.jpg" style="width: 100%"></div>
+    <div class = "grayscale" data-aos="fade-up"><img src="img/campagneadshell2PP.jpg" style="width:100%"></div>
+    <div class = "grayscale" data-aos="fade-up"><img  src="img/newspaper.jpg" style="width:100%"></div>
+    <div class = "grayscale" data-aos="fade-up"><img src="img/Psme.png" style="width:100%"></div>
+
+  </div>
+
+  <div class="column">
+  
+    <div class = "grayscale" data-aos="fade-up"><img  src="img/backpackportraitPP.jpg" style="width: 100%"></div>
+    <div class = "grayscale" data-aos="fade-up"><img src="img/campagneadshell2PP.jpg" style="width:100%"></div>
+    <div class = "grayscale" data-aos="fade-up"><img  src="img/newspaper.jpg" style="width:100%"></div>
+    <div class = "grayscale" data-aos="fade-up"><img src="img/Psme.png" style="width:100%"></div>
+    
+  </div>
+
+  <div class="column">
+    <div style="width:100%"></div>
+    <div style="width:100%"></div>
+    <div style="width:100%"></div>
+    <div style="width:100%"></div>
+  </div>
+
+</div>  
+ 
+</body>
+</html>
+<script>
+  AOS.init({
+  duration: 1200,
+});
+</script>
